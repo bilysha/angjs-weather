@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+  <meta charset="UTF-8">
+  <title>Weather</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/loadanimation.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+  <link rel="shortcut icon" href="resourses/images/favicon.png" type="image/png">
+</head>
+<body ng-app="weather">
+  <div class="wrapper" >
+    <div class="content">
+      <header>
+        <div class="center">
+          <a href="#/"><p>WEATHER GETTER</p></a>
+        </div>
+      </header>
+      <ng-view></ng-view>
+      <footer>
+        <div class="center">
+          <p>Povered by
+            <a href="https://darksky.net/" target="blank">Dark Sky</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="resourses/angular.1.2.19/angular.js"></script>
+  <script src="resourses/angular.1.2.19/angular-route.js"></script>
+  <script src="modules/weather/weather.module.js"></script>
+  <script src="modules/weather/controllers/cityselection.controller.js"></script>
+  <script src="modules/weather/controllers/deepinfo.controller.js"></script>
+  <script src="modules/weather/services/http.request.service.js"></script>
+  <script src="modules/weather/services/constants.service.js"></script>
+  <script src="modules/weather/services/addedcities.service.js"></script>
+  <script src="modules/weather/directives/displaycity.directive.js"></script>
+  <script src="modules/weather/directives/dayofweek.directive.js"></script>
+
+</body>
+</html>

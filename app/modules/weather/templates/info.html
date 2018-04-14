@@ -1,0 +1,19 @@
+<div class="center">
+  <h1>{{item.timezone}} today <span ng-if="lola">lola</span></h1>
+  <section class="deep-today">
+    <p class="week-summary">{{item.hourly.summary}}</p>
+    <section class="graph">
+      <article class="button-container">
+        <button ng-click="selectGraph('temperature')">Temperature</button>
+        <button ng-click="selectGraph('humidity')">Humidity</button>
+        <button ng-click="selectGraph('wind')">Wind</button>
+      </article>
+      <canvas id="myChart"></canvas>
+    </section>
+  </section>
+  <h2>The next week</h2>
+  <p class="week-summary">{{item.daily.summary}}</p>
+  <section class="week">
+    <day ng-repeat="day in item.daily.data" day="day" convert="convert(x)"></day>
+  </section>
+</div>

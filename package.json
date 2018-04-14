@@ -1,0 +1,28 @@
+{
+  "name": "weather-angular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "jshint": "^2.9.5"
+  },
+  "devDependencies": {
+    "angular": "^1.6.9",
+    "angular-mocks": "^1.6.9",
+    "jasmine": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://Ilya_Belavusau@git.epam.com/Ilya_Belavusau/weather-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

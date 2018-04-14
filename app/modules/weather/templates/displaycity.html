@@ -1,0 +1,27 @@
+<section class="city-container">
+  <a href='#/info/{{item.timezone}}'>
+    <article ng-if="empty" class="test">
+      <p>Loading information about {{name}}</p>
+      <div class="cssload-spin-box"></div>
+    </article>
+    <section ng-if="!empty">
+      <article class="timezone-information">
+        <p>{{item.timezone}}</p>
+        <p>{{item.currently.summary}}</p>
+      </article>
+      <section class="current-weather">
+        <img ng-src="resourses/images/{{item.currently.icon}}.png">
+        <article class="temperature">
+          <p class="current-temperature">{{item.currently.temperature}} &deg;C</p>
+          <p>feel like {{item.currently.apparentTemperature}} &deg;C</p>
+        </article>
+        <article class="additional-information">
+          <p>Precipitation : {{item.currently.precipProbability}} %</p>
+          <p>Humidity : {{item.currently.humidity}} %</p>
+          <p>Wind : {{item.currently.windSpeed}} km/h</p>
+        </article>
+      </section>
+    </section>
+  </a>
+</section>
+
