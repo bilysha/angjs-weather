@@ -1,7 +1,6 @@
 angular.module('weather').
   controller('deepinfoCtrl', ['$scope', '$routeParams', 'addedCities', function($scope, $routeParams, addedCities) {
     $scope.item = addedCities.getCity($routeParams.timezone);
-    $scope.lola = true;
     $scope.labels = [];
     $scope.temperatureDataset = [];
     $scope.humidityDataset = [];
